@@ -4,13 +4,9 @@ import Bottles from './bottols/Bottles/Bottles'
 
 function App() {
 
-  const bottlePromise = fetch('./data.json').then(res => res.json())
-  // const localApi = [
-  //   {id: 1, name: 'Pink Bottle', color: 'pink', metal:'stianless steel'},
-  //   {id: 2, name: 'Pink Bottle', color: 'pink', metal:'stianless steel'},
-  //   {id: 3, name: 'Pink Bottle', color: 'pink', metal:'stianless steel'},
-  //   {id: 4, name: 'Pink Bottle', color: 'pink', metal:'stianless steel'},
-  // ]
+  // const bottlePromise = fetch('./data.json').then(res => res.json())
+
+  const bottlePromise = fetch('./data.json').then(res=>res.json());
   return (
     <>
       <div>
