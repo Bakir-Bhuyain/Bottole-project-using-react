@@ -6,12 +6,15 @@ const Bottles = ({ bottlePromise }) => {
 
       const [cart, setCart]= useState([]);
       function handleBottle(bottle) {
-            console.log('bottle clicked', bottle);
+            // console.log('bottle clicked', bottle);
+            const newCart = [...cart,bottle];
+            setCart(newCart);
       }
       // console.log(bottles);
       return (
             <div>
                   <h3>Bottle Length : {bottles.length}</h3>
+                  <p>My Shopping Cart : {cart.length}</p>
                   <div className='all-bottles'>
                         {
                               bottles.map(bottle => <Bottle  
